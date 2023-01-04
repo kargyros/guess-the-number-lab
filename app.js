@@ -3,6 +3,7 @@ const game = {
   biggestNum: 100,
   smallestNum: 1,
   secretNum: null,
+  prevGuesses:[], 
   play: function() {
     this.secretNum = Math.floor(Math.random() * 
       (this.biggestNum - this.smallestNum + 1)) + this.smallestNum
@@ -13,7 +14,10 @@ const game = {
 
 
 
+
+
 /*--------------------TASKS----------------------
+1. Add a prevGuesses property to the game object initialized to an empty array.
 
 
 
